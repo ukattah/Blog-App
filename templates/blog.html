@@ -1,0 +1,20 @@
+{% extends 'base.html' %} 
+
+{% block head %} 
+
+{% endblock %}
+
+{% block body %} 
+<div id="blog_content">
+    <h2 id="blog_title">{{ blog.title }}</h2>
+    <div id="new_content">
+        <h3>Written By {{ blog.author }}</h3>
+        <p>{{ blog.body }}</p>
+        <a href="http://127.0.0.1:5000/delete/{{blog.id}}">
+            <button  id="delete" class="button">Delete</button>
+        </a>
+    </div>
+   
+</div>
+
+{% endblock %}

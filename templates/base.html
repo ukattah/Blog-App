@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <h1>CS-1520 Blog Corner</h1> 
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename= 'css/main.css')}}"
+    />
+    <div class="navigation_bar">
+        <a href="http://127.0.0.1:5000/new-blog" >
+            <button  id="new_blog_button" class="button">New Blog</button>
+        </a>
+       
+        <a href="http://127.0.0.1:5000/">
+            <button  id="home_button" class="button">Home</button>
+        </a>
+    </div>
+    
+  </head>
+  <body>
+    {% block body %} {% endblock %}
+  </body>
+</html>

@@ -1,0 +1,28 @@
+{% extends 'base.html' %} 
+
+{% block head %}
+    <title>New Blog</title>
+
+{% endblock %} 
+
+{% block body %}
+    <div id="newContentId" class="content">
+        <h2 >Add a New Blog</h2>
+        <form action="/" name="new_content" method="POST">
+            <label class="label" for="blog_title">Blog title:</label><br>
+            <input type="text" name="blog_title" id="blog_title"/>      
+            <br /><br>
+
+            <label class="label" for="blog_body">Blog body:</label><br>
+            <textarea id="text_area" type="text" name="blog_body" id="blog_body"></textarea>
+            <br /><br>
+
+            <label class="label" for="blog_author">Blog author:</label><br>
+            <input type="text" name="blog_author" id="blog_author"/>      
+            <br /><br>
+           
+
+            <input class="newContent" id="submitId" type="submit" value="Add Blog" />
+          </form>
+    </div>
+{% endblock %}
